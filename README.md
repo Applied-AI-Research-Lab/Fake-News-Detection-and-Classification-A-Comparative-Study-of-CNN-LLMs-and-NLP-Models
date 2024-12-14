@@ -1,8 +1,8 @@
-# Unmasking Misinformation: Leveraging CNN, BERT, and GPT Models for Robust Fake News Classification
+# Fake News Detection and Classification: A Comparative Study of CNN, LLMs, and NLP Models
 
 ## Article
 * **Journal**: 
-* **Title**: Unmasking Misinformation: Leveraging CNN, BERT, and GPT Models for Robust Fake News Classification
+* **Title**: Fake News Detection and Classification: A Comparative Study of CNN, LLMs, and NLP Models
 * **DOI**: 
 
 ## Authors
