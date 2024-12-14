@@ -175,52 +175,12 @@ class EvaluationMethods:
 EVM = EvaluationMethods(dataset_path='test_set.csv')
 
 # # Count correct predictions
-print(str(EVM.count_matching_rows('Label', 'gpt_ft_mini_prediction')))
+# print(str(EVM.count_matching_rows('Label', 'gpt_ft_prediction')))
 
 # # Evaluate the predictions made by each model
-# print(f'base:gpt-4-0125-preview: ' + str(EVM.evaluate_results('Spam', 'gpt_bm_prediction', 'base:gpt-4-0125-preview')))
-# print(f'ft:gpt-4: ' + str(EVM.evaluate_results('Spam', 'gpt_ft_prediction', 'ft:gpt-4')))
-# print(f'ft:roberta-adamw: ' + str(EVM.evaluate_results('Spam', 'roberta_ft_adamw', 'ft:roberta-adamw')))
-# print(f'ft:roberta-adam: ' + str(EVM.evaluate_results('Spam', 'roberta_ft_adam', 'ft:roberta-adam')))
-
-# Create scatterplots
-# print(EVM.scatterplot(original_column='Spam', prediction_column='gpt_bm_prediction'))
-# print(EVM.scatterplot(original_column='Spam', prediction_column='gpt_ft_prediction'))
-# print(EVM.scatterplot(original_column='Spam', prediction_column='roberta_ft_adamw'))
-# print(EVM.scatterplot(original_column='Spam', prediction_column='roberta_ft_adam'))
-
-# Create histograms
-# EVM.plot_histograms(original_column='Spam', prediction_column='gpt_bm_prediction')
-
-# Create confusion matrix
-# EVM.plot_confusion_matrix(original_column='Spam', prediction_column='gpt_bm_prediction')
-# EVM.plot_confusion_matrix(original_column='Spam', prediction_column='gpt_ft_prediction')
-# EVM.plot_confusion_matrix(original_column='Spam', prediction_column='roberta_ft_adamw')
-# EVM.plot_confusion_matrix(original_column='Spam', prediction_column='roberta_ft_adam')
-
-# Plot a stacked bar chart showing the distribution of labels across categories in two columns
-# print(EVM.plot_stacked_bar_chart(original_column='sentiment', prediction_column='gpt_bm_prediction'))
-# print(EVM.plot_stacked_bar_chart(original_column='sentiment', prediction_column='gpt_ft_prediction'))
-# print(EVM.plot_stacked_bar_chart(original_column='sentiment', prediction_column='bert__adamw_ft_prediction'))
-# print(EVM.plot_stacked_bar_chart(original_column='sentiment', prediction_column='bert__adam_ft_prediction'))
-
-# Plot a grouped bar chart showing the relationship between labels in two columns
-# print(EVM.plot_grouped_bar_chart(original_column='sentiment', prediction_column='gpt_bm_prediction'))
-# print(EVM.plot_grouped_bar_chart(original_column='sentiment', prediction_column='gpt_ft_prediction'))
-# print(EVM.plot_grouped_bar_chart(original_column='sentiment', prediction_column='bert__adamw_ft_prediction'))
-# print(EVM.plot_grouped_bar_chart(original_column='sentiment', prediction_column='bert__adam_ft_prediction'))
-
-# Plot a heatmap showing relationships and patterns between label categories in two columns
-# print(EVM.plot_heatmap(original_column='sentiment', prediction_column='gpt_bm_prediction'))
-# print(EVM.plot_grouped_bar_chart(original_column='sentiment', prediction_column='gpt_ft_prediction'))
-# print(EVM.plot_grouped_bar_chart(original_column='sentiment', prediction_column='bert__adamw_ft_prediction'))
-# print(EVM.plot_grouped_bar_chart(original_column='sentiment', prediction_column='bert__adam_ft_prediction'))
-
-# Comments
-# {'count': 1126, 'percentage': 98.25479930191972} MAE: 0.017452006980802792
-# {'count': 1138, 'percentage': 99.30191972076788} MAE: 0.006980802792321117
-# {'count': 1116, 'percentage': 97.38219895287958} MAE: 0.02617801047120419
-# {'count': 1136, 'percentage': 99.12739965095986} MAE: 0.008726003490401396
-
-
-
+print(f'base:gpt-4o-2024-08-06: ' + str(EVM.evaluate_results('Label', 'gpt_bm_prediction', 'base:gpt-4o-2024-08-06')))
+print(f'base:gpt-4o-mini-2024-07-18: ' + str(EVM.evaluate_results('Label', 'gpt_mini_bm_prediction', 'base:gpt-4o-mini-2024-07-18')))
+print(f'ft:gpt-4: ' + str(EVM.evaluate_results('Label', 'gpt_ft_prediction', 'ft:gpt-4')))
+print(f'ft:gpt-4-mini: ' + str(EVM.evaluate_results('Label', 'gpt_ft_mini_prediction', 'ft:gpt-4-mini')))
+print(f'ft:bert-adam: ' + str(EVM.evaluate_results('Label', 'bert_optimizer_Adam_lr_2e-05_epochs_3_bs_6_maxlen_512_prediction', 'ft:bert-adam')))
+print(f'ft:cnn-adam: ' + str(EVM.evaluate_results('Label', 'cnn_optimizer_Adam_lr_2e-05_epochs_3_bs_6_maxlen_4096_prediction', 'ft:cnn-adam')))

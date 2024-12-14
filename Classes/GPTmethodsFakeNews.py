@@ -260,17 +260,17 @@ logging.basicConfig(filename='error_log.txt', level=logging.ERROR)
 GPT = GPTmethods()
 #
 # # Create the json file for training
-GPT.create_jsonl(data_type='train', data_set='train_set.csv')  # You have to change the prompt text on each project
+# GPT.create_jsonl(data_type='train', data_set='train_set.csv')  # You have to change the prompt text on each project
 #
 # # Create the json file for validation
-GPT.create_jsonl(data_type='validation', data_set='validation_set.csv')
+# GPT.create_jsonl(data_type='validation', data_set='validation_set.csv')
 
 # Make predictions before Fine-tuning using the Base Model
 # GPT_BM = GPTmethods(model_id='gpt-4o-mini')
 # GPT_BM.predictions(data_set='test_set.csv', prediction_column='gpt_mini_bm_prediction')
 
 # Make predictions after Fine-tuning using the Fine-tuned (model_id)
-# GPT_FT = GPTmethods(model_id='ft:gpt-4o-2024-08-06:personal:sn-4o:AMTIvykp')
+# GPT_FT = GPTmethods(model_id='ft:gpt-4o-2024-08-06:personal:fakenewsgpt4:AeHsz6nr')
 # GPT_FT.predictions(data_set='test_set.csv', prediction_column='gpt_ft_prediction')
 
 # Make predictions before Fine-tuning using the Base Model
@@ -278,5 +278,5 @@ GPT.create_jsonl(data_type='validation', data_set='validation_set.csv')
 # GPT_BM.predictions(data_set='test_set.csv', prediction_column='gpt_bm_mini_prediction')
 
 # Make predictions after Fine-tuning using the Fine-tuned (model_id)
-# GPT_FT = GPTmethods(model_id='ft:gpt-4o-mini-2024-07-18:personal:sn-4o-mini:AMToPRV6')
+# GPT_FT = GPTmethods(model_id='ft:gpt-4o-mini-2024-07-18:personal:fakenewsgpt4mini:AeHTZEHn')
 # GPT_FT.predictions(data_set='test_set.csv', prediction_column='gpt_ft_mini_prediction')
