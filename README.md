@@ -1,7 +1,7 @@
 # Fake News Detection and Classification: A Comparative Study of CNN, LLMs, and NLP Models
 
 ## Article
-* **Journal**: Future Internet
+* **Journal**: [Future Internet](https://www.mdpi.com/journal/futureinternet)
 * **Title**: [Fake News Detection and Classification: A Comparative Study of CNN, LLMs, and NLP Models](https://www.mdpi.com/1999-5903/17/1/28)
 * **DOI**: [https://doi.org/10.3390/fi17010028](https://doi.org/10.3390/fi17010028)
 
